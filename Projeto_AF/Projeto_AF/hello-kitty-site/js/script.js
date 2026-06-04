@@ -1,7 +1,11 @@
-// <!-- AF - Avaliação final. 
-//  Tema: Sanrio.
-//  Laryssa Cristina Dias | 251613
-//  Marcos Paulo Hessel dos Santos |251630 -->
+//<!--
+//AF - Avaliação Final - Linguagens de Programação
+//Tema do Projeto: Sanrio - Turminha da HK
+//Aluno 1: Laryssa Cristina Dias - RA: 251613
+//Aluno 2: Marcos Paulo Hessel dos Santos - RA: 251630
+//Professor: Abimael de Oliveira
+//Data de entrega: 07/06
+//-->
 
 
 
