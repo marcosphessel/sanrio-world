@@ -1,0 +1,270 @@
+/* AF - Avaliação final. 
+ Tema: Sanrio.
+ Laryssa Cristina Dias | 251613
+ Marcos Paulo Hessel dos Santos |251630 */
+
+ :root {
+    --rosa-principal: #ff6b9d;
+    --rosa-claro: #ffd6e7;
+    --rosa-escuro: #c94f7b;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+    --texto-escuro: #333333;
+ }
+
+ /* reset */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: poppins;
+    font-weight: b;
+    background-color: var(--cinza-claro);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+    padding-top: 70px;
+ }
+
+ img {
+    max-width: 100%;
+    display: block;
+ }
+
+ section {
+    padding: 60px 0;
+ }
+
+ /* menu */
+
+ #navbar {
+    background-color: var(--rosa-principal) !important;
+ }
+
+ .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--branco) !important;
+ }
+
+ nav-link {
+    color: var(--branco) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--rosa-claro) !important;
+}
+
+/* carrossel */
+.hero .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 107, 157, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* titulos de secoes */
+.titulo-secao {
+    text-align: center;
+    color: var(--rosa-escuro);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-secao {
+    text-align: center;
+    color: var(--texto-escuro);
+    margin-bottom: 40px;
+}
+
+/* apresentação */
+.apresentacao {
+    background-color: var(--rosa-claro);
+}
+
+.apresentacao h2 {
+    color: var(--rosa-escuro);
+    margin-bottom: 15px;
+}
+
+.img-apresentacao {
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3);
+}
+
+/* cards */
+
+.card-personalizado {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card-personalizado:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+}
+
+.card-personalizado imh {
+    height: 220px;
+    object-fit: cover;
+    /* imagem preenche o espaco sem distorcer */
+    transition: transform 0.4s ease;
+}
+
+.card-personalizado img:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: var(--rosa-escuro);
+    font-weight: bold;
+}
+
+/* botao personalizado */
+.btn-sanrio {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--rosa-principal), var(--rosa-escuro));
+    /* degrade no botao  */
+    color: var(--branco);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-sanrio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 107, 157, 0.5);
+    color: var(--branco);
+}
+
+/* chamada contato */
+
+.chamada-contato {
+    background-color: var(--rosa-principal);
+    text-align: center;
+    color: var(--branco);
+}
+
+.chamada-contato h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.chamada-contato .btn-sanrio {
+    background: var(--branco);
+    color: var(--rosa-principal);
+}
+
+.chamada-contato .btn-sanrio:hover {
+    color: var(--rosa-escuro);
+}
+
+/* rodape */
+
+.rodape {
+    background-color: var(--rosa-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.links-rodape {
+    display: flex;
+    /* flexboc */
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.links-rodape a {
+    color: var(--rosa-claro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-rodape a:hover {
+    color: var(--branco);
+}
+
+
+.galeria .card-personalizado img {
+    height: 250px;
+    object-fit: contain;
+    background-color: var(--rosa-claro);
+}
+/* ===== CONTATO ===== */
+.contato {
+    background-color: var(--branco);
+}
+
+.form-contato .form-control,
+.form-contato .form-select {
+    border: 2px solid var(--rosa-claro);
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.form-contato .form-control:focus,
+.form-contato .form-select:focus {
+    border-color: var(--rosa-principal);
+    box-shadow: 0 0 8px rgba(255, 107, 157, 0.3);
+}
+
+.form-label {
+    color: var(--rosa-escuro);
+    font-weight: bold;
+}
+
+.btn-limpar {
+    display: inline-block;
+    background-color: var(--cinza-claro);
+    color: var(--texto-escuro);
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 2px solid var(--rosa-claro);
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-limpar:hover {
+    background-color: var(--rosa-claro);
+}
+
+/* ===== INFORMAÇÕES DE CONTATO ===== */
+.info-contato {
+    background-color: var(--rosa-claro);
+    border-radius: 15px;
+    padding: 30px;
+    height: 100%;
+}
+
+.info-contato h2 {
+    color: var(--rosa-escuro);
+    margin-bottom: 20px;
+}
+
+.info-contato h3 {
+    color: var(--rosa-escuro);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.info-
